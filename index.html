@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/style.css" />
+		<title>他们都在投</title>
+	</head>
+	<body onload="init()">
+		
+		<div class="container">
+			<ul class="box">
+				<li class="box-cell" onclick="window.location.href='http://m.iqianjin.com/user/register?hd=0&utmSource=39'">
+					<div id="box-cell-1">
+						<div id="left">
+							<img src="img/aiqianjin.png" alt="爱钱进">
+						</div>
+						<div id="right">
+							<a>万元重金在召唤，寻宝达人榜等你来战！</a>
+						</div></div>
+					<div id="box-cell-2"><a>年化收益</a></div>
+					<div id="box-cell-3"><div class="button-rad"><a id="big">18</a><a id="small">%起</a></div></div>
+					<div id="box-cell-4"><div id="cell-4-left"><font class="num">累计投资金额</font><br>￥367676,787,329</div><div id="cell-4-right"><font class="num">累计投资人数</font><br>￥3,787,329</div></div>
+				</li>
+				<li class="box-cell" onclick="window.location.href='http://m.longdai.com/register'">
+					<div id="box-cell-1">
+						<div id="left">
+							<img src="img/longdai.png" alt="龙贷">
+						</div>
+						<div id="right">
+							<a>万元重金在召唤，寻宝达人榜等你来战！</a>
+						</div></div>
+					<div id="box-cell-2"><a>年化收益</a></div>
+					<div id="box-cell-3"><div class="button-rad"><a id="big">15-20</a><a id="small">%</a></div></div>
+					<div id="box-cell-4"><div id="cell-4-left"><font class="num">累计投资金额</font><br>￥367676,787,329</div><div id="cell-4-right"><font class="num">累计投资人数</font><br>￥3,787,329</div></div>
+				</li>
+				<li class="box-cell" onclick="window.location.href='http://m.longdai.com/register'">
+					<div id="box-cell-1">
+						<div id="left">
+							<img src="img/longdai.png" alt="龙贷">
+						</div>
+						<div id="right">
+							<a>万元重金在召唤，寻宝达人榜等你来战！</a>
+						</div></div>
+					<div id="box-cell-2"><a>年化收益</a></div>
+					<div id="box-cell-3"><div class="button-rad"><a id="big">15-20</a><a id="small">%</a></div></div>
+					<div id="box-cell-4"><div id="cell-4-left"><font class="num">累计投资金额</font><br>￥367676,787,329</div><div id="cell-4-right"><font class="num">累计投资人数</font><br>￥3,787,329</div></div>
+				</li>
+			</ul>
+		</div>
+		<p id="back-to-top"><a href="#top"><span></span>返回顶部</a></p>
+<script>
+		function init(){
+				var lis = document.getElementsByTagName("li");
+				for(i=0;i<lis.length; i++){
+				lis[i].style.backgroundColor = getRandomColor();
+				if(i>0){
+					if(lis[i].style.backgroundColor==lis[i-1].style.backgroundColor){
+						lis[i].style.backgroundColor = getRandomColor();
+					}
+				}
+				}
+		
+		}
+		function getRandomColor(){
+			
+			  /*return  '#' +
+				(function(color){
+				return (color +=  '0123456789abcdef'[Math.floor(Math.random()*16)])
+				  && (color.length == 6) ?  color : arguments.callee(color);
+			  })('');*/
+			 var colorList = ["#87CEEB","#FFEC8B","#3CB371","#FFB6C1","#FFA500","#C7A3ED","#CC9898","#8AC007","#CCC007","#FFAD5C","#FF9999","#6CA6CD"]; 
+			 var colorIndex = Math.floor(Math.random()*colorList.length); 
+			 var color = colorList[colorIndex]; 
+			 colorList.splice(colorIndex,1); 	
+			 return color; 
+
+		}
+</script>
+<script type="text/javascript" src="http://code.hs-cn.com/jquery/jquery-1.7.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+//首先将#back-to-top隐藏
+ $("#back-to-top").hide();
+//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+$(function () {
+$(window).scroll(function(){
+if ($(window).scrollTop()>100){
+$("#back-to-top").fadeIn(1500);
+}
+else
+{
+$("#back-to-top").fadeOut(1500);
+}
+});
+//当点击跳转链接后，回到页面顶部位置
+$("#back-to-top").click(function(){
+$('body,html').animate({scrollTop:0},1000);
+return false;
+});
+});
+});
+</script><header id="top"></header>
+	</body>
+</html>

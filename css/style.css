@@ -1,0 +1,69 @@
+body{
+	font-size: small;
+	font-family: "宋体",verdana,helvetica,arial,sans-serif;
+	background-color: #F2F2F2;
+	color: black;
+	margin: 0;
+	padding: 0;
+	}
+.container{width: 100%;margin: 0;padding: 0;margin-top:10px ;}
+ul{list-style-type: none;}
+ul li{cursor: pointer;}
+/*li:first-child{background-color:cornflowerblue;}
+li:nth-child(2){background-color: #6495ED;}*/
+.box{width:95%;margin:0 auto;padding:0;position: relative;}
+.box-cell{ height:200px;padding:10px;margin-bottom: 10px;position: relative;;}
+#box-cell-1{height: 50px;margin-bottom: 10px;display: inline;}
+#box-cell-1 #left{width: 120px;height:50px;margin:0;padding:0;float:left;}
+#box-cell-1 #right{max-width:70%;margin-left:130px;padding-top: 10px;}
+#box-cell-1 #left img{width: 120px;}
+#box-cell-1 #right a{height: 40;width:90%;float:left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+#box-cell-2{height: 20px;text-align: center;font-size:120% ;font-weight: bold;margin: 10px auto 5px auto;clear: both;}
+#box-cell-3{height: 50px;text-align: center;clear: both;margin: 5px auto;}
+.button-rad{width: 40%;padding:7px;margin:auto;color:white;-webkit-border-radius: 15px;-moz-border-radius: 15px;background-color: crimson;}
+.button-rad  #big{font-size: 300%;font-weight: bolder;}
+.button-rad  #small{font-size:100%;font-weight:bold ;}
+#box-cell-4{height: 60px;text-align: center;width: inherit;display:inline;}
+#cell-4-left{width: 50%;margin:20px auto 10px auto ;float: left;line-height: 1.5;}
+#cell-4-right{width: 50%;margin:20px auto 10px auto ;float: left;line-height: 1.5;}
+.num{font-weight: bold;}
+
+p#back-to-top{
+      position:fixed;
+      bottom:30px;
+      right:20px;
+}
+p#back-to-top a{
+	  font-size: xx-small;
+      text-align:center;
+      text-decoration:none;
+      color:#d1d1d1;
+      display:block;
+      width:50px;
+      /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+      -moz-transition:color 1s;
+      -webkit-transition:color 1s;
+      -o-transition:color 1s;
+}
+p#back-to-top a:hover{
+      color:#979797;
+}
+p#back-to-top a span{
+      background:#d1d1d1 url(../img/20150613034245176_easyicon_net_32.png) no-repeat center center;
+      border-radius:6px;
+      display:block;
+      height:40px;
+      width:40px;
+      margin-bottom:5px;
+      margin-left: 5px;
+      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+      -moz-transition:background 1s;
+      -webkit-transition:background 1s;
+      -o-transition:background 1s;
+}
+#back-to-top a:hover span{
+      background:#979797 url(../img/20150613034245176_easyicon_net_32.png) no-repeat center center;
+}
+
+
+header{position:fixed;bottom: 0;width: 100%;left: 0;right: 0;background-color: aquamarine;z-index: 2;height: 50px;}
